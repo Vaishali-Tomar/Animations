@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #000;
+        }
+        .container{
+            width: 1100px;
+            display: flex;
+            
+            justify-content: space-between;
+            -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0004);
+        }
+        .container img{
+            
+            max-width: 400px;
+            transform-origin: center;
+            transform: perspective(800px) rotateY(16deg);
+            transition: 0.5s;
+            border-radius: 15px;
+            box-shadow: rgb(177, 174, 174);
+        }
+        .container:hover img{
+            opacity: 0.2;
+        }
+        .container img:hover{
+            transform: perspective(800px) rotateY(0deg);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <img src="https://cityfurnish.com/blog/wp-content/uploads/2023/09/shree-krishna-radha-illustration-generative-ai-1-min.jpg" alt="">
+    <img src="https://t3.ftcdn.net/jpg/05/15/63/82/360_F_515638234_Leo0UBEay0ozXWnObkkxLRNJXM9xhdWG.jpg" alt="">
+    <img src="https://cityfurnish.com/blog/wp-content/uploads/2023/09/radha-krishna-photo-painting-generative-ai-min-1024x1024.jpg" alt="">
+</div> 
+
+</body>
+</html>
